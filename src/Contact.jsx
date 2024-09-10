@@ -14,7 +14,8 @@ const Contact = () => {
   });
 
   const [errMsg, setErrMsg] = useState('');
-  const [success, setSuccess] = useState(false);
+  const [success, setSuccess] = useState(false); // Manage alert state
+  const [showSuccessAlert, setShowSuccessAlert] = useState(false); // Control visibility of the success alert
 
   const [validName, setValidName] = useState(false);
   const [validEmail, setValidEmail] = useState(false);
@@ -68,6 +69,7 @@ const Contact = () => {
 
       if (data.success) {
         setSuccess(true);
+        setShowSuccessAlert(true); // Show success alert
         setFormData({
           name: '',
           email: '',
@@ -86,23 +88,29 @@ const Contact = () => {
 
   return (
     <>
-      {success ? (
-        <section>
-          <h1>Message Sent Successfully!</h1>
-        </section>
-      ) : (
-        <Container className="mt-5">
-          <Row className="justify-content-center">
-            <Col md={8}>
-              <h1 className="text-center mb-4">Contact Us</h1>
-              <p className="text-center">
-                We’d love to hear from you! Please fill out the form below, and we'll get in touch with you shortly.
-              </p>
-              {errMsg && (
-                <Alert ref={errRef} variant="danger" aria-live="assertive">
-                  {errMsg}
-                </Alert>
-              )}
+      <Container className="mt-5">
+        <Row className="justify-content-center">
+          <Col md={8}>
+            <h1 className="text-center mb-4">Contact Us</h1>
+            <p className="text-center">
+              We’d love to hear from you! Please fill out the form below, and we'll get in touch with you shortly.
+            </p>
+            {errMsg && (
+              <Alert ref={errRef} variant="danger" aria-live="assertive">
+                {errMsg}
+              </Alert>
+            )}
+            
+            {/* Success Alert */}
+            {showSuccessAlert && (
+              <Alert show={showSuccessAlert} variant="success" onClose={() => setShowSuccessAlert(false)} dismissible>
+                <Alert.Heading>Message Sent Successfully!</Alert.Heading>
+                <p>Your message has been successfully sent! We will get back to you soon.</p>
+              </Alert>
+            )}
+
+            {/* Contact Form */}
+            {!success && (
               <Form onSubmit={handleSubmit}>
                 <Form.Group controlId="formName">
                   <Form.Label>Name</Form.Label>
@@ -195,10 +203,10 @@ const Contact = () => {
                   Send Message
                 </Button>
               </Form>
-            </Col>
-          </Row>
-        </Container>
-      )}
+            )}
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 };
