@@ -1,0 +1,35 @@
+/* Default styles */
+.carousel-image {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    max-height: 100vh; /* This limits the height to the viewport height, adjusting as needed */
+  }
+  
+  .carousel-caption {
+    font-size: 1.5rem;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .carousel-image {
+      height: 300px; /* Adjust for smaller screens */
+    }
+  
+    .carousel-caption {
+      font-size: 1.25rem;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .carousel-image {
+      height: 200px; /* Adjust for even smaller screens */
+    }
+  
+    .carousel-caption {
+      font-size: 1rem;
+      padding: 8px;
+    }
+  }
+  

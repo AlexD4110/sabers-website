@@ -1,13 +1,12 @@
 import React from 'react';
-import Layout from '../Layout'; // Ensure this path is correct
+import Contact from '../Contact';
 
-const Contact = () => {
+const contact = () => {
   return (
-    <Layout>
-      <h1>Contact Page</h1>
-      <p>This is the content of the Contact page.</p>
-    </Layout>
+    <div>
+      <Contact/>
+    </div>
   );
 };
 
-export default Contact;
+export default contact;
