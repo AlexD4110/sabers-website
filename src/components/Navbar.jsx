@@ -10,7 +10,7 @@ const Navbar = () => {
         {/* Logo as Home button */}
         <NavLink className="navbar-brand d-flex align-items-center" to="/">
           <Image
-            src="public/images/Vernon.svg" // Update the path to the SVG file
+            src="./images/Vernon.svg" // Update the path to the SVG file
             alt="Vernon Travel Basketball Logo"
             style={{ width: '70px', height: '70px' }} // Adjust the size of the logo
             fluid
