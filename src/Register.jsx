@@ -53,7 +53,9 @@ const Register = () => {
         const v1 = EMAIL_REGEX.test(email);
         const v2 = PHONE_REGEX.test(phone);
         if (!v1 || !v2) {
-            setErrMsg("Invalid Email or Phone Number");
+            if (errRef.current) {
+                errRef.current.focus();
+            }
             return;
         }
         try {
@@ -82,7 +84,9 @@ const Register = () => {
             } else {
                 setErrMsg('Registration Failed');
             }
-            errRef.current.focus();
+            if (errRef.current) {
+                errRef.current.focus(); // Ensure errRef is not undefined
+            }
         }
     }
 
@@ -208,7 +212,7 @@ const Register = () => {
                                         required
                                     />
                                 </Form.Group>
-                                
+
                                 <Row className="mb-3">
                                     <Form.Group as={Col} controlId="formGridTown">
                                         <Form.Label>Town</Form.Label>
