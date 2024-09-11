@@ -12,7 +12,7 @@ const Navbar = () => {
           <Image
             src="./images/Vernon.svg" // Update the path to the SVG file
             alt="Vernon Travel Basketball Logo"
-            style={{ width: '70px', height: '70px' }} // Adjust the size of the logo
+            style={{ width: '80px', height: '80px', marginRight: '10px' }} // Adjust the size and margin of the logo
             fluid
           />
         </NavLink>
@@ -28,40 +28,45 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
+          <ul className="navbar-nav ms-auto text-center"> {/* Center the text */}
             <li className="nav-item">
               <NavLink
-                className="nav-link"
-                activeClassName="active"
+                className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+                style={{ padding: '10px', fontSize: '18px' }} // Reduce padding and increase font size
                 to="/about"
               >
+                <i className="fas fa-info-circle me-2"></i> {/* FontAwesome Icon */}
                 About
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
-                className="nav-link"
-                activeClassName="active"
+                className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+                style={{ padding: '10px', fontSize: '18px' }} // Reduce padding and increase font size
                 to="/pricing"
               >
+                <i className="fas fa-tag me-2"></i> {/* FontAwesome Icon */}
                 Pricing
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
-                className="nav-link"
-                activeClassName="active"
+                className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+                style={{ padding: '10px', fontSize: '18px' }} // Reduce padding and increase font size
                 to="/contact"
               >
+                <i className="fas fa-envelope me-2"></i> {/* FontAwesome Icon */}
                 Contact
               </NavLink>
             </li>
             <li className="nav-item">
               {/* Sign Up button */}
               <NavLink
-                className="nav-link btn btn-light text-dark px-3 fw-bold"
+                className={({ isActive }) => (isActive ? 'nav-link btn btn-light text-dark px-4 py-2 fw-bold active' : 'nav-link btn btn-light text-dark px-4 py-2 fw-bold')}
+                style={{ borderRadius: '20px', marginTop: '10px' }} // Style for button, rounded corners
                 to="/signup"
               >
+                <i className="fas fa-user-plus me-2"></i> {/* FontAwesome Icon */}
                 Sign Up
               </NavLink>
             </li>
