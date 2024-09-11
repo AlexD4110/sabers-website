@@ -10,7 +10,8 @@ import Container from 'react-bootstrap/Container';
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const PHONE_REGEX = /^[0-9]{10}$/;
-const REGISTER_URL = 'http://localhost:5134/auth/register';
+const REGISTER_URL = 'https://vernon-travel-backend-d7efc2dfd059.herokuapp.com/auth/register';
+
 
 const Register = () => {
     const userRef = useRef();
