@@ -8,8 +8,8 @@ const CarouselComponent = () => {
       <Carousel.Item>
         <img
           className="d-block w-100 carousel-image"
-          src="/images/5thGrade1.JPG"
-          alt="First slide"
+          src="/images/A.JPG"
+          alt="Boys 5th grade travel blue"
         />
         <Carousel.Caption className="carousel-caption">
           <h3>5th Grade Travel Blue</h3>
@@ -20,7 +20,7 @@ const CarouselComponent = () => {
         <img
           className="d-block w-100 carousel-image"
           src="/images/8thGrade2.JPG"
-          alt="Second slide"
+          alt="Picture of 8th Grade Travel D3"
         />
         <Carousel.Caption className="carousel-caption">
           <h3>8th Grade Travel D3</h3>
@@ -30,12 +30,12 @@ const CarouselComponent = () => {
       <Carousel.Item>
         <img
           className="d-block w-100 carousel-image"
-          src="/images/Practice1.JPG"
-          alt="Third slide"
+          src="/images/girls.JPG"
+          alt="Picture of girls in last home game"
         />
         <Carousel.Caption className="carousel-caption">
           <h3>Practice</h3>
-          <p>One of 7th Grade Travels first practices</p>
+          <p>Girls in one of their last home games!</p>
         </Carousel.Caption>
       </Carousel.Item>
       {/* Add other carousel items similarly */}

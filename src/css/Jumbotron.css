@@ -5,3 +5,19 @@
     margin-bottom: 2rem;
     border-radius: 0.3rem;
 }
+
+.button-group {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 15px; /* Add space between the buttons */
+}
+
+.button-item {
+    margin: 0; /* Remove any individual margins */
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding to make buttons smaller */
+    min-width: 150px; /* Ensure consistent button width */
+    max-width: 200px; /* Set max-width to prevent overly wide buttons */
+    text-align: center;
+    border-radius: 8px; /* Rounded corners for a smoother look */
+}

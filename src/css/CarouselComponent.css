@@ -3,33 +3,33 @@
     object-fit: contain;
     width: 100%;
     height: auto;
-    max-height: 100vh; /* This limits the height to the viewport height, adjusting as needed */
-  }
-  
-  .carousel-caption {
+    max-height: 100vh; /* Limits height to the viewport height */
+}
+
+.carousel-caption {
     font-size: 1.5rem;
-  }
-  
-  /* Media Queries for responsiveness */
-  @media (max-width: 768px) {
+    padding: 1em; /* Adds padding to make captions more readable */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
     .carousel-image {
-      height: 300px; /* Adjust for smaller screens */
+        height: 50vh; /* Adjust height based on the viewport for smaller screens */
     }
-  
+
     .carousel-caption {
-      font-size: 1.25rem;
-      padding: 10px;
+        font-size: 1.25rem; /* Slightly smaller font */
+        padding: 0.75em; /* Reduce padding to fit content */
     }
-  }
-  
-  @media (max-width: 576px) {
+}
+
+@media (max-width: 576px) {
     .carousel-image {
-      height: 200px; /* Adjust for even smaller screens */
+        height: 40vh; /* Further reduce height for very small screens */
     }
-  
+
     .carousel-caption {
-      font-size: 1rem;
-      padding: 8px;
+        font-size: 1rem; /* Smaller font for mobile */
+        padding: 0.5em; /* Reduce padding for mobile */
     }
-  }
-  
+}

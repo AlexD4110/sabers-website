@@ -21,6 +21,7 @@ const Layout = ({ children }) => {
           </a>
         </div>
         <p>© 2024 Vernon Travel Basketball Co. All Rights Reserved.</p>
+        <p className="footer-text">Page created by Alex Deane</p>
       </footer>
     </div>
   );

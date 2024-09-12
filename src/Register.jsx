@@ -105,7 +105,7 @@ const Register = () => {
                     <Card style={{ width: '50rem' }}>
                         <Card.Body>
                             {errMsg && <Alert ref={errRef} variant="danger" aria-live="assertive">{errMsg}</Alert>}
-                            <h1 className="text-center">Tryout Registration</h1>
+                            <h1 className="text-center">Try Out Registration</h1>
                             <Form onSubmit={handleSubmit}>
                                 <Row className="mb-3">
                                     <Form.Group as={Col} controlId="formGridPlayerFirstName">

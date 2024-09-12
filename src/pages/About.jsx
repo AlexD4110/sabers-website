@@ -21,34 +21,35 @@ const About = () => {
         </Col>
       </Row>
 
-      {/* Carousel Section */}
-      <Row className="justify-content-center mb-4">
-        <Col md={10}>
-          <Carousel>
-            <Carousel.Item>
-              <img src="/images/8thGrade1.jpg" className="d-block w-100 img-fluid" alt="First slide" />
-              <Carousel.Caption>
-                <h3>Our Teams in Action</h3>
-                <p>Building teamwork and sportsmanship.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img src="/images/Image2.jpg" className="d-block w-100 img-fluid" alt="Second slide" />
-              <Carousel.Caption>
-                <h3>Community Engagement</h3>
-                <p>Connecting with our community for support.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img src="images/YouthNight.jpg" className="d-block w-100 img-fluid" alt="Third slide" />
-              <Carousel.Caption>
-                <h3>Success on the Court</h3>
-                <p>5 out of 7 teams winning playoff games in our first year!</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-          </Carousel>
-        </Col>
-      </Row>
+     {/* Carousel Section */}
+<Row className="justify-content-center mb-4">
+  <Col md={10}>
+    <Carousel>
+      <Carousel.Item>
+        <img src="/images/8thGrade1.jpg" className="d-block w-100 img-fluid" alt="First slide" />
+        <Carousel.Caption style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '10px', borderRadius: '10px' }}>
+          <h3 style={{ color: 'white' }}>Our Teams in Action</h3>
+          <p style={{ color: 'white' }}>Building teamwork and sportsmanship.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img src="/images/Image2.jpg" className="d-block w-100 img-fluid" alt="Second slide" />
+        <Carousel.Caption style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '10px', borderRadius: '10px' }}>
+          <h3 style={{ color: 'white' }}>Community Engagement</h3>
+          <p style={{ color: 'white' }}>Connecting with our community for support.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img src="images/YouthNight.jpg" className="d-block w-100 img-fluid" alt="Third slide" />
+        <Carousel.Caption style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '10px', borderRadius: '10px' }}>
+          <h3 style={{ color: 'white' }}>Success on the Court</h3>
+          <p style={{ color: 'white' }}>5 out of 7 teams winning playoff games in our first year!</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+  </Col>
+</Row>
+
 
       {/* Detailed Information Section */}
       <Row className="justify-content-center">
