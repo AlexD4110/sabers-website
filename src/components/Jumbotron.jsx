@@ -13,17 +13,17 @@ const Jumbotron = () => {
                     fluid // This makes the image responsive
                     style={{ width: '300px', height: 'auto', margin: '0 auto' }} // Adjust the width and center the logo
                 />
-                <div className="button-group" style={{ marginTop: '20px' }}>
-    <Link className="btn btn-primary btn-lg button-item" to="/about" role="button">
-        Learn more
-    </Link>
-    <Link className="btn btn-primary btn-lg button-item" to="/contact" role="button">
-        Contact
-    </Link>
-    <Link className="btn btn-primary btn-lg button-item" to="/register" role="button">
-        Register
-    </Link>
-</div>
+                <div className="button-group d-flex flex-column flex-md-row justify-content-center" style={{ marginTop: '20px' }}>
+                    <Link className="btn btn-primary btn-lg mb-3 mb-md-0 mx-md-2" to="/about" role="button">
+                        Learn more
+                    </Link>
+                    <Link className="btn btn-primary btn-lg mb-3 mb-md-0 mx-md-2" to="/contact" role="button">
+                        Contact
+                    </Link>
+                    <Link className="btn btn-primary btn-lg mb-3 mb-md-0 mx-md-2" to="/register" role="button">
+                        Register
+                    </Link>
+                </div>
             </div>
             <p className="lead">Vernon Travel Basketball is a youth basketball program in the town of Vernon, Connecticut.</p>
             <hr className="my-4" />
