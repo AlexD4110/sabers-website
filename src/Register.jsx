@@ -260,7 +260,7 @@ const Register = () => {
                                 </Form.Group>
 
                                 <Button variant="primary" type="submit">
-                                    Tryout Registration
+                                    Try Out Registration
                                 </Button>
                             </Form>
                         </Card.Body>
