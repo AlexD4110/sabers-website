@@ -6,7 +6,7 @@ import InputMask from 'react-input-mask';
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const PHONE_REGEX = /^\(\d{3}\) \d{3}-\d{4}$/; // Updated for input mask
 const ZIP_REGEX = /^\d{5}$/; // For 5-digit zip codes
-const REGISTER_URL = 'http://localhost:5134/auth/register';
+const REGISTER_URL = 'https://vernon-travel-backend-d7efc2dfd059.herokuapp.com/auth/register';
 
 const Register = () => {
     const userRef = useRef();
@@ -369,7 +369,7 @@ const Register = () => {
                                 </li>
                             </ul>
                             <p>If you have any questions, please contact us via our contact page here on our website or email
-                                 us at (vernonyouthbasketballo@gmail.com).</p>
+                                 us at (vernonyouthbasketball@gmail.com).</p>
                             <Button variant="primary" href="/">Return to Home</Button>
                         </Card.Body>
                     </Card>
