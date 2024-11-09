@@ -17,7 +17,7 @@ export default function BoardMembers() {
   };
 
   const president = {
-    name: "Alex",
+    name: "Alex Deane",
     role: "President",
     image: "/images/Alex.jpg",
     bio: "A recent graduate from the University of Connecticut, I restarted the program driven by my passion for working with kids and creating impactful youth programs."
@@ -25,19 +25,19 @@ export default function BoardMembers() {
 
   const members = [
     {
-      name: "Melissa",
+      name: "Melissa Szczycinski",
       role: "Vice President",
       image: "/images/Melissa.jpg",
       bio: "As a psychiatrist with her own practice, Melissa oversees the program's vice-presidential duties, bringing her expertise in mental health to support our youth basketball initiatives."
     },
     {
-      name: "Kevin",
+      name: "Kevin Coniff",
       role: "Treasurer",
       image: "/images/Kevin.jpg",
       bio: "With a background in finance, Kevin manages the program's finances, ensuring fiscal responsibility and sustainable growth for our organization."
     },
     {
-      name: "Jess",
+      name: "Jess Coniff",
       role: "Board Member",
       image: "/images/Jess.JPEG",
       bio: "Jess leads our sponsorship and fundraising initiatives, working to secure partnerships that help the program thrive."
