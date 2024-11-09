@@ -17,7 +17,7 @@ export default function BoardMembers() {
   };
 
   const president = {
-    name: "Your Name",
+    name: "Alex",
     role: "President",
     image: "/images/Alex.jpg",
     bio: "A recent graduate from the University of Connecticut, I restarted the program driven by my passion for working with kids and creating impactful youth programs."
