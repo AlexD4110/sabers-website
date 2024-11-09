@@ -33,7 +33,7 @@ export default function BoardMembers() {
     {
       name: "Kevin Coniff",
       role: "Treasurer",
-      image: "/images/Kevin.jpg",
+      image: "/images/Kevin.png",
       bio: "With a background in finance, Kevin manages the program's finances, ensuring fiscal responsibility and sustainable growth for our organization."
     },
     {
@@ -55,7 +55,7 @@ export default function BoardMembers() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="mx-auto mb-5"
-          style={{ maxWidth: '500px' }} // Increased size for president card
+          style={{ maxWidth: '750px' }}
         >
           <Card className="shadow-lg" style={{ borderRadius: '10px', overflow: 'hidden' }}>
             <Row className="no-gutters">
@@ -65,21 +65,22 @@ export default function BoardMembers() {
                     src={president.image}
                     alt={president.name}
                     style={{
-                      height: '120px',
-                      width: '120px',
+                      height: '250px',
+                      width: '250px',
                       objectFit: 'cover',
+                      objectPosition: 'top',
                       borderRadius: '50%',
                     }}
                   />
                 </Button>
               </Col>
               <Col xs={8}>
-                <Card.Body className="p-3">
-                  <Card.Subtitle className="text-primary text-uppercase mb-1" style={{ fontSize: '0.9rem' }}>
+                <Card.Body className="p-4">
+                  <Card.Subtitle className="text-primary text-uppercase mb-2" style={{ fontSize: '1rem' }}>
                     {president.role}
                   </Card.Subtitle>
-                  <Card.Title style={{ fontSize: '1.5rem', fontWeight: '600' }}>{president.name}</Card.Title>
-                  <Card.Text style={{ fontSize: '1rem', color: '#6c757d' }}>{president.bio}</Card.Text>
+                  <Card.Title style={{ fontSize: '1.75rem', fontWeight: '600' }}>{president.name}</Card.Title>
+                  <Card.Text style={{ fontSize: '1.2rem', color: '#6c757d' }}>{president.bio}</Card.Text>
                 </Card.Body>
               </Col>
             </Row>
@@ -89,13 +90,13 @@ export default function BoardMembers() {
         {/* Board Members Grid */}
         <Row className="g-4">
           {members.map((member, index) => (
-            <Col xs={12} sm={6} md={4} key={member.name} className="d-flex justify-content-center">
+            <Col xs={12} sm={6} md={6} lg={4} key={member.name} className="d-flex justify-content-center">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                style={{ maxWidth: '350px', width: '100%' }} // Increased size for board member cards
+                style={{ maxWidth: '550px', width: '100%' }}
               >
                 <Card className="shadow-sm h-100" style={{ borderRadius: '10px', overflow: 'hidden' }}>
                   <Button variant="link" onClick={() => handleImageClick(member.image)} style={{ padding: 0 }}>
@@ -104,17 +105,19 @@ export default function BoardMembers() {
                       src={member.image}
                       alt={member.name}
                       style={{
-                        height: '250px',
+                        height: '600px',
+                        width: '100%',
                         objectFit: 'cover',
+                        objectPosition: member.name === "Kevin Coniff" ? 'top 70%' : 'top' // Custom position to lower Kevin's image
                       }}
                     />
                   </Button>
                   <Card.Body className="text-center p-4">
-                    <Card.Subtitle className="text-primary text-uppercase mb-2" style={{ fontSize: '0.95rem' }}>
+                    <Card.Subtitle className="text-primary text-uppercase mb-2" style={{ fontSize: '1rem' }}>
                       {member.role}
                     </Card.Subtitle>
-                    <Card.Title style={{ fontWeight: 'bold', fontSize: '1.3rem' }}>{member.name}</Card.Title>
-                    <Card.Text style={{ color: '#6c757d', fontSize: '1rem' }}>{member.bio}</Card.Text>
+                    <Card.Title style={{ fontWeight: 'bold', fontSize: '1.75rem' }}>{member.name}</Card.Title>
+                    <Card.Text style={{ color: '#6c757d', fontSize: '1.2rem' }}>{member.bio}</Card.Text>
                   </Card.Body>
                 </Card>
               </motion.div>
