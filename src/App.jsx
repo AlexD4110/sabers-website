@@ -1,34 +1,36 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion'; // Import framer-motion for animations
 import Jumbotron from './components/Jumbotron';
 import CarouselComponent from './components/Carousel';
 import Layout from './Layout';
 import Register from './Register';
 import About from './pages/About';
+import Board from './pages/Board';
 import Pricing from './pages/Pricing';
 import Contact from './pages/Contact';
 import SignUp from './pages/SignUp';
 import AuthProvider from './context/AuthContext';
+import EventsAndFlyers from './pages/EventsAndFlyers';
 import ErrorBoundary from './components/ErrorBoundary';
-import { Toast, Button, Image} from 'react-bootstrap'; // Import Toast and Button from react-bootstrap
-
-
-
+import { Toast, Button } from 'react-bootstrap';
+import CalendarPage from './pages/CalendarPage';
 
 function HomePageWithToast() {
-  const [showToast, setShowToast] = useState(true); // State to manage toast visibility
-  const navigate = useNavigate(); // Hook to programmatically navigate
+  const [showToast, setShowToast] = useState(true);
+  const navigate = useNavigate();
 
-  // Function to handle toast click and navigate to Register
   const handleToastClick = () => {
-    setShowToast(false); // Hide the toast
-    navigate('/Register'); // Navigate to the register page
+    setShowToast(false);
+    navigate('/register');
   };
 
   return (
-    <>
-      
-
+    <motion.div
+      initial={{ opacity: 0, y: 30 }} // Fade in and slide up for a smooth entrance
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: 'easeOut' }} // Adjust duration and easing for smoothness
+    >
       {/* Jumbotron and Carousel Components */}
       <div id="Important Information">
         <Jumbotron />
@@ -52,7 +54,7 @@ function HomePageWithToast() {
           </Toast.Body>
         </Toast>
       </div>
-    </>
+    </motion.div>
   );
 }
 
@@ -66,9 +68,12 @@ function App() {
               <Route path="/" element={<HomePageWithToast />} />
               <Route path="/register" element={<Register />} />
               <Route path="/about" element={<About />} />
+              <Route path="/board" element={<Board />} />
+              <Route path="/events" element={<EventsAndFlyers />} />
               <Route path="/pricing" element={<Pricing />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/signup" element={<SignUp />} />
+              <Route path="/calendar" element={<CalendarPage />} />
             </Routes>
           </ErrorBoundary>
         </Layout>

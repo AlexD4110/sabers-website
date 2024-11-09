@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar'; // Adjust the path as necessary
-import './Layout.css'; // Assuming you'll create a CSS file for styles
+import './css/Layout.css'; // Assuming you'll create a CSS file for styles
 
 const Layout = ({ children }) => {
   return (
@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
           </a>
         </div>
         <p>© 2024 Vernon Travel Basketball Co. All Rights Reserved.</p>
-        <p className="footer-text">Page created by Alex Deane</p>
+        <p className="footer-text">Website created by Alex Deane</p>
       </footer>
     </div>
   );

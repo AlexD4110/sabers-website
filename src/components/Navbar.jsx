@@ -43,6 +43,38 @@ const Navbar = () => {
               <NavLink
                 className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
                 style={{ padding: '10px', fontSize: '18px' }} // Reduce padding and increase font size
+                to="calendar"
+              >
+                <i className="fas fa-info-circle me-2"></i> {/* FontAwesome Icon */}
+                Practice Schedule
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+                style={{ padding: '10px', fontSize: '18px' }} // Reduce padding and increase font size
+                to="/board"
+              >
+                <i className="fas fa-clipboard"></i> {/* FontAwesome Icon */}
+                Board
+              </NavLink>
+            </li>
+            
+            <li className="nav-item">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? 'nav-link active' : 'nav-link'
+                }
+                style={{ padding: '10px', fontSize: '18px' }}
+                to="/events"
+              >
+                <i className="fas fa-calendar-alt me-2"></i> Events
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+                style={{ padding: '10px', fontSize: '18px' }} // Reduce padding and increase font size
                 to="/pricing"
               >
                 <i className="fas fa-tag me-2"></i> {/* FontAwesome Icon */}
@@ -69,6 +101,7 @@ const Navbar = () => {
                 <i className="fas fa-user-plus me-2"></i> {/* FontAwesome Icon */}
                 Sign Up
               </NavLink>
+              
             </li>
           </ul>
         </div>
