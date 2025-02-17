@@ -21,44 +21,14 @@ const About = () => {
                   Elite Development for Grades 4-11 in CT & Western MA
                 </Card.Text>
                 <Button 
-  style={{ backgroundColor: '#7BAFD4', borderColor: '#7BAFD4', color: 'white' }} 
-  size="lg" 
-  href="/SignUp"
->
-  Join Our Elite Program
-</Button>
-
+                  style={{ backgroundColor: '#7BAFD4', borderColor: '#7BAFD4', color: 'white' }} 
+                  size="lg" 
+                  href="/SignUp"
+                >
+                  Join Our Elite Program
+                </Button>
               </Card.ImgOverlay>
             </Card>
-          </Col>
-        </Row>
-
-        {/* Carousel Section */}
-        <Row className="justify-content-center mb-4">
-          <Col md={10}>
-            <Carousel>
-              <Carousel.Item>
-                <img src="/images/sabers-training.jpg" className="d-block w-100 img-fluid" alt="AAU Training" />
-                <Carousel.Caption style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '10px', borderRadius: '10px' }}>
-                  <h3>Elite AAU Competition</h3>
-                  <p>Competing against top regional talent</p>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src="/images/cam.jpeg" className="d-block w-100 img-fluid" alt="Expert Coaching" />
-                <Carousel.Caption style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '10px', borderRadius: '10px' }}>
-                  <h3>Professional Coaching Staff</h3>
-                  <p>Director Alex Deane leading in development.</p>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src="/images/sabers-tournament.jpg" className="d-block w-100 img-fluid" alt="Tournament Play" />
-                <Carousel.Caption style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '10px', borderRadius: '10px' }}>
-                  <h3>Tournament Exposure</h3>
-                  <p>*Competing in premier AAU events across New England and more</p>
-                </Carousel.Caption>
-              </Carousel.Item>
-            </Carousel>
           </Col>
         </Row>
 
@@ -75,64 +45,83 @@ const About = () => {
                   <p>
                     The <strong>New England Sabers AAU Basketball Program</strong> is a premier competitive travel team 
                     serving athletes in grades 4-11 across Connecticut and Western Massachusetts. Founded and directed 
-                    by <strong>Alex Deane</strong> with elite coaching, our program focuses on developing 
-                    complete basketball players through elite competition and professional training.
+                    by <strong>Alex Deane</strong> - former UConn Women's Basketball Practice Squad Player with years of experience in AAU - 
+                    our program brings championship-level experience to player development.
                   </p>
-                  <p>
-                    <strong>Program Highlights:</strong>
-                  </p>
-                  <ul className="mb-4">
+                  {/* New Experience Section */}
+                  <div className="row mb-4">
+                    <div className="col-md-6">
+                      <Card className="h-100 shadow-sm">
+                        <Card.Body>
+                          <Card.Title>Championship Pedigree</Card.Title>
+                          <Card.Text>
+                            As a member of Geno Auriemma's UConn Huskies practice squad, I trained daily with 11x National Champions,
+                            executing opposing teams' game plans to prepare the nation's top womens program for championship runs. This experience
+                            shaped our program's emphasis on:
+                            <ul>
+                              <li>Detail-oriented preparation</li>
+                              <li>High basketball IQ development</li>
+                              <li>Championship habits in practice</li>
+                            </ul>
+                          </Card.Text>
+                        </Card.Body>
+                      </Card>
+                    </div>
+                    <div className="col-md-6">
+                      <Card className="h-100 shadow-sm">
+                        <Card.Body>
+                          <Card.Title>AAU: My Formative Journey</Card.Title>
+                          <Card.Text>
+                            My own AAU experience forged both player and character development:
+                            <ul>
+                              <li>Competed in 200+ games across 8 states</li>
+                              <li>Learned resilience through tough losses, esspecially as a younger player</li>
+                              <li>Developed leadership as team captain</li>
+                              <li>Built lifelong brotherhoods with teammates</li>
+                            </ul>
+                            These experiences directly inform our holistic approach to developing athletes and young men.
+                          </Card.Text>
+                        </Card.Body>
+                      </Card>
+                    </div>
+                  </div>
+
+                  {/* New Philosophy Section */}
+                  <blockquote className="blockquote text-center my-5">
+                    <p className="mb-0 font-italic">
+                      "AAU basketball taught me that greatness is earned in empty gyms long before the bright lights come on. 
+                      Our program instills that same work ethic and mental toughness that builds champions on the court 
+                      and in life."
+                    </p>
+                    <footer className="blockquote-footer mt-2">Alex Deane, Program Director</footer>
+                  </blockquote>
+
+                  <p><strong>Program Highlights:</strong></p>
+                  <ul>
                     <li>Competition in 8+ regional tournaments annually</li>
                     <li>College recruitment support for high school athletes</li>
                     <li>Strength and conditioning programming</li>
                     <li>Academic progress monitoring</li>
                   </ul>
-                  <p>
-                    Our program structure includes:
-                  </p>
-                  <div className="row mb-4">
-                    <div className="col-md-6">
-                      <strong>Youth Division (Grades 4-8):</strong>
-                      <ul>
-                        <li>Fundamental skill development</li>
-                        <li>Introduction to competitive systems</li>
-                        <li>2 practices/week + weekend tournaments 2 to 3 times a month</li>
-                      </ul>
-                    </div>
-                    <div className="col-md-6">
-                      <strong>High School Division (Grades 9-11*):</strong>
-                      <ul>
-                        <li>College-prep training regimen</li>
-                        <li>Exposure tournaments</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <p>
-                    Serving communities from <strong>all over Connecticut to  Western Mass</strong>, we draw top talent from
-                    <span className="text-muted">
-                      across the states!
-                    </span>
-                  </p>
                   <div className="text-center mt-5">
-  <Button 
-    style={{ backgroundColor: '#7BAFD4', borderColor: '#7BAFD4', color: 'white' }} 
-    size="lg" 
-    href="/SignUp" 
-    className="mx-2"
-  >
-    Register Now
-  </Button>
-  <Button 
-    style={{ borderColor: '#7BAFD4', color: '#7BAFD4' }} 
-    variant="outline" 
-    size="lg" 
-    href="/Contact" 
-    className="mx-2"
-  >
-    Schedule Tryout
-  </Button>
-</div>
-
+                    <Button 
+                      style={{ backgroundColor: '#7BAFD4', borderColor: '#7BAFD4', color: 'white' }} 
+                      size="lg" 
+                      href="/SignUp" 
+                      className="mx-2"
+                    >
+                      Register Now
+                    </Button>
+                    <Button 
+                      style={{ borderColor: '#7BAFD4', color: '#7BAFD4' }} 
+                      variant="outline" 
+                      size="lg" 
+                      href="/Contact" 
+                      className="mx-2"
+                    >
+                      Schedule Tryout
+                    </Button>
+                  </div>
                 </Card.Text>
               </Card.Body>
             </Card>
