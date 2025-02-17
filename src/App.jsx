@@ -37,7 +37,7 @@ function HomePageWithToast() {
       <div id="Carousel" className="mt-5">
         <CarouselComponent />
       </div>
-
+      <div></div>
       {/* Toast Component */}
       <div className="position-fixed bottom-0 end-0 p-3" style={{ zIndex: 5 }}>
         <Toast show={showToast} onClose={() => setShowToast(false)}>
