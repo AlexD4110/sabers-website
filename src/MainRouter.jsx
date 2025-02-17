@@ -6,7 +6,6 @@ import Board from './pages/Board'; // Board page
 import Rosters from './pages/Rosters'; // Rosters page
 import Pricing from './pages/Pricing'; // Pricing page
 import Contact from './pages/Contact'; // Contact page
-import SignUp from './pages/SignUp'; // Sign Up page
 
 function MainRouter() {
   return (
@@ -17,7 +16,6 @@ function MainRouter() {
         <Route path="/rosters" element={<Rosters />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/signup" element={<SignUp />} />
         {/* Add more routes as needed */}
       </Routes>
   );

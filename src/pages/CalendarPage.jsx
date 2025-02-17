@@ -11,7 +11,7 @@ const CalendarPage = () => {
       transition={{ duration: 0.4 }} // Set a quick transition duration for subtlety
       style={{ textAlign: 'center' }}
     >
-      <h1>Vernon Travel Basketball Practice Master Schedule</h1>
+      <h1>Sabers Basketball Practice Master Schedule</h1>
       <GoogleCalendarEmbed />
     </motion.div>
   );

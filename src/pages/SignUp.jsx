@@ -1,17 +1,43 @@
+// Signup.jsx
 import React from 'react';
-import Register from '../Register';
-import { motion } from 'framer-motion'; // Import framer-motion for animations
 
-const SignUp = () => {
+const Signup = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }} // Start slightly below the final position with opacity 0
-      animate={{ opacity: 1, y: 0 }} // Fade in and move to the final position
-      transition={{ duration: 0.4, ease: 'easeOut' }} // Quick, smooth transition
-    >
-      <Register />
-    </motion.div>
+    <div className="form-container" style={{
+      width: '100%',
+      maxWidth: '640px',
+      margin: '0 auto',
+      padding: '20px',
+      minHeight: '100vh'
+    }}>
+      <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}>
+        AAU Program Registration
+      </h1>
+      
+      <div style={{
+        position: 'relative',
+        paddingBottom: '140%', // Adjust based on your form's aspect ratio
+        height: 0,
+        overflow: 'hidden'
+      }}>
+        <iframe
+          title="AAU Program Registration Form"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSett8YPNHP3GB6vztS3hvpbDGTF7RY_HKPH0Qb6Ixc6i480DA/viewform?embedded=true"
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            border: 'none'
+          }}
+          loading="lazy"
+        >
+          Loading…
+        </iframe>
+      </div>
+    </div>
   );
 };
 
-export default SignUp;
+export default Signup;

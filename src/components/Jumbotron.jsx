@@ -8,7 +8,7 @@ const Jumbotron = () => {
         <div className="jumbotron text-center">
             <div className="text-center" style={{ margin: '20px auto' }}>
                 <Image
-                    src="./images/VernonNew.svg" // Make sure the path is correct
+                    src="./images/Sabers.svg" // Make sure the path is correct or 
                     alt="Vernon Travel Basketball Logo"
                     fluid // This makes the image responsive
                     style={{ width: '300px', height: 'auto', margin: '0 auto' }} // Adjust the width and center the logo
@@ -25,7 +25,7 @@ const Jumbotron = () => {
                     </Link>
                 </div>
             </div>
-            <p className="lead">Vernon Travel Basketball is a youth basketball program in the town of Vernon, Connecticut.</p>
+            <p className="lead">New England Sabers Basketball an aau basketball program based out of the Central Connecticut and Western Mass Area.</p>
             <hr className="my-4" />
             <p>Tryouts and other information can be found here on our website as well as our Facebook page.</p>
         </div>

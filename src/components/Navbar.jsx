@@ -5,12 +5,13 @@ import { Image } from 'react-bootstrap'; // Import Image component from react-bo
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: '#7BAFD4' }}>
+
       <div className="container-fluid">
         {/* Logo as Home button */}
         <NavLink className="navbar-brand d-flex align-items-center" to="/">
           <Image
-            src="./images/VernonNew.svg" // Update the path to the SVG file
+            src="./images/Sabers.svg" // Update the path to the SVG file
             alt="Vernon Travel Basketball Logo"
             style={{ width: '80px', height: '80px', marginRight: '10px' }} // Adjust the size and margin of the logo
             fluid
@@ -49,18 +50,21 @@ const Navbar = () => {
                 Practice Schedule
               </NavLink>
             </li>
+            {/*
             <li className="nav-item">
               <NavLink
                 className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
-                style={{ padding: '10px', fontSize: '18px' }} // Reduce padding and increase font size
+                style={{ padding: '10px', fontSize: '18px' }}
                 to="/board"
               >
-                <i className="fas fa-clipboard"></i> {/* FontAwesome Icon */}
-                Board
+                <i className="fas fa-clipboard"></i>
+                Leadership
               </NavLink>
             </li>
+            */}
             
-            <li className="nav-item">
+            {/*
+              <li className="nav-item">
               <NavLink
                 className={({ isActive }) =>
                   isActive ? 'nav-link active' : 'nav-link'
@@ -71,6 +75,8 @@ const Navbar = () => {
                 <i className="fas fa-calendar-alt me-2"></i> Events
               </NavLink>
             </li>
+            */}
+            
             <li className="nav-item">
               <NavLink
                 className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}

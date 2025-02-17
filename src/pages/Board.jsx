@@ -38,7 +38,7 @@ export default function BoardMembers() {
     },
     {
       name: "Jess Coniff",
-      role: "Board Member",
+      role: "Coach",
       image: "/images/Jess.JPEG",
       bio: "Jess leads our sponsorship and fundraising initiatives, working to secure partnerships that help the program thrive."
     }

@@ -1,26 +1,33 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button, Carousel } from 'react-bootstrap';
-import { motion } from 'framer-motion'; // Import framer-motion for animations
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }} // Start with opacity 0 and slightly below the final position
-      animate={{ opacity: 1, y: 0 }} // Fade in and move to the final position
-      transition={{ duration: 0.5, ease: 'easeOut' }} // Adjust duration and easing for smoothness
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: 'easeOut' }}
     >
       <Container fluid className="p-0">
         {/* Hero Section */}
         <Row noGutters>
           <Col>
             <Card className="bg-dark text-white">
-              <Card.Img src="/images/7thGrade.JPG" alt="Vernon Travel Basketball" className="img-fluid" />
+              <Card.Img src="/images/Practice1.JPG" alt="New England Sabers Basketball" className="img-fluid" />
               <Card.ImgOverlay className="d-flex flex-column justify-content-center text-center" style={{ padding: '10px', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
-                <Card.Title className="display-4">Vernon Travel Basketball</Card.Title>
+                <Card.Title className="display-4">New England Sabers AAU Basketball</Card.Title>
                 <Card.Text className="lead">
-                  Empowering Youth in Vernon, CT
+                  Elite Development for Grades 4-11 in CT & Western MA
                 </Card.Text>
-                <Button variant="primary" size="lg" href="/SignUp">Join Us</Button>
+                <Button 
+  style={{ backgroundColor: '#7BAFD4', borderColor: '#7BAFD4', color: 'white' }} 
+  size="lg" 
+  href="/SignUp"
+>
+  Join Our Elite Program
+</Button>
+
               </Card.ImgOverlay>
             </Card>
           </Col>
@@ -31,66 +38,101 @@ const About = () => {
           <Col md={10}>
             <Carousel>
               <Carousel.Item>
-                <img src="/images/8thGrade1.jpg" className="d-block w-100 img-fluid" alt="First slide" />
+                <img src="/images/sabers-training.jpg" className="d-block w-100 img-fluid" alt="AAU Training" />
                 <Carousel.Caption style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '10px', borderRadius: '10px' }}>
-                  <h3 style={{ color: 'white' }}>Our Teams in Action</h3>
-                  <p style={{ color: 'white' }}>Building teamwork and sportsmanship.</p>
+                  <h3>Elite AAU Competition</h3>
+                  <p>Competing against top regional talent</p>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                <img src="/images/Image2.jpg" className="d-block w-100 img-fluid" alt="Second slide" />
+                <img src="/images/cam.jpeg" className="d-block w-100 img-fluid" alt="Expert Coaching" />
                 <Carousel.Caption style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '10px', borderRadius: '10px' }}>
-                  <h3 style={{ color: 'white' }}>Community Engagement</h3>
-                  <p style={{ color: 'white' }}>Connecting with our community for support.</p>
+                  <h3>Professional Coaching Staff</h3>
+                  <p>Director Alex Deane leading in development.</p>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                <img src="images/YouthNight.jpg" className="d-block w-100 img-fluid" alt="Third slide" />
+                <img src="/images/sabers-tournament.jpg" className="d-block w-100 img-fluid" alt="Tournament Play" />
                 <Carousel.Caption style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '10px', borderRadius: '10px' }}>
-                  <h3 style={{ color: 'white' }}>Success on the Court</h3>
-                  <p style={{ color: 'white' }}>5 out of 7 teams winning playoff games in our first year!</p>
+                  <h3>Tournament Exposure</h3>
+                  <p>*Competing in premier AAU events across New England and more</p>
                 </Carousel.Caption>
               </Carousel.Item>
             </Carousel>
           </Col>
         </Row>
 
-        {/* Detailed Information Section */}
+        {/* Program Details Section */}
         <Row className="justify-content-center">
           <Col md={8}>
             <Card className="p-4 shadow-sm">
               <Card.Body>
-                <Card.Title className="text-center mb-4">About Vernon Travel Basketball</Card.Title>
+                <Card.Title className="text-center mb-4">About New England Sabers AAU</Card.Title>
                 <Card.Text style={{ lineHeight: '1.6', fontSize: '1.1rem' }}>
-                  <p>
-                    Vernon Travel Basketball is a competitive youth basketball program designed for players in grades 5-8. 
-                    Founded in May 2023, the program was created to meet the demand for a more competitive youth basketball 
-                    organization in Vernon, Connecticut. Our mission is to provide high-quality training, foster sportsmanship, 
-                    and encourage both athletic and personal development in all our participants.
+                  <p className="h5 text-muted mb-4 text-center">
+                    $1,000 Program Fee Includes: Uniform Package, Tournament Fees, and Professional Coaching
                   </p>
                   <p>
-                    <strong>President and Founder: Alex Deane</strong> identified a significant need in Vernon for a youth basketball 
-                    program that not only builds competitive skills but also strengthens character and teamwork. By creating a comprehensive 
-                    business plan with minimal funding, Alex successfully revived Vernon Travel Basketball. 
+                    The <strong>New England Sabers AAU Basketball Program</strong> is a premier competitive travel team 
+                    serving athletes in grades 4-11 across Connecticut and Western Massachusetts. Founded and directed 
+                    by <strong>Alex Deane</strong> with elite coaching, our program focuses on developing 
+                    complete basketball players through elite competition and professional training.
                   </p>
                   <p>
-                    Since its inception, the program has seen tremendous community engagement, generating widespread support from families and local businesses. 
-                    Through social media outreach, Vernon Travel Basketball has reached over 8,000 people and attracted a diverse group of 74 players 
-                    within just 60 days of launching. The positive impact has been evident as the kids gain confidence, discipline, and a sense of belonging.
+                    <strong>Program Highlights:</strong>
                   </p>
+                  <ul className="mb-4">
+                    <li>Competition in 8+ regional tournaments annually</li>
+                    <li>College recruitment support for high school athletes</li>
+                    <li>Strength and conditioning programming</li>
+                    <li>Academic progress monitoring</li>
+                  </ul>
                   <p>
-                    Community support has been a vital pillar of our success. By fostering a strong connection with the community, we’ve built a program that helps kids 
-                    not only on the basketball court but also off it. Our players have developed valuable life skills such as teamwork, communication, and perseverance, 
-                    all while building lasting friendships. Parents, coaches, and community members have all rallied around the program, making it a true grassroots effort 
-                    to empower our youth.
+                    Our program structure includes:
                   </p>
+                  <div className="row mb-4">
+                    <div className="col-md-6">
+                      <strong>Youth Division (Grades 4-8):</strong>
+                      <ul>
+                        <li>Fundamental skill development</li>
+                        <li>Introduction to competitive systems</li>
+                        <li>2 practices/week + weekend tournaments 2 to 3 times a month</li>
+                      </ul>
+                    </div>
+                    <div className="col-md-6">
+                      <strong>High School Division (Grades 9-11*):</strong>
+                      <ul>
+                        <li>College-prep training regimen</li>
+                        <li>Exposure tournaments</li>
+                      </ul>
+                    </div>
+                  </div>
                   <p>
-                    In just the first year, Vernon Travel Basketball's competitive spirit shone through, with 5 out of 7 teams advancing to playoff victories. 
-                    We continue to prioritize both the personal and athletic growth of our players, offering tailored training programs that focus on individual 
-                    skill development. Our goal is to create an environment where kids feel supported, learn valuable life lessons, and can achieve their full potential, 
-                    both as athletes and as future leaders in the community. We hope to see <strong>you </strong>in our program!
+                    Serving communities from <strong>all over Connecticut to  Western Mass</strong>, we draw top talent from
+                    <span className="text-muted">
+                      across the states!
+                    </span>
                   </p>
-                  <Button variant="primary" href="/contact">Contact Us</Button>
+                  <div className="text-center mt-5">
+  <Button 
+    style={{ backgroundColor: '#7BAFD4', borderColor: '#7BAFD4', color: 'white' }} 
+    size="lg" 
+    href="/SignUp" 
+    className="mx-2"
+  >
+    Register Now
+  </Button>
+  <Button 
+    style={{ borderColor: '#7BAFD4', color: '#7BAFD4' }} 
+    variant="outline" 
+    size="lg" 
+    href="/Contact" 
+    className="mx-2"
+  >
+    Schedule Tryout
+  </Button>
+</div>
+
                 </Card.Text>
               </Card.Body>
             </Card>

@@ -16,11 +16,13 @@ const Layout = ({ children }) => {
           <a href="https://www.facebook.com/profile.php?id=100093485093274" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-facebook"></i>
           </a>
-          <a href="https://x.com/VernonBBall" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-twitter"></i>
+          <a href="https://www.instagram.com/ne_sabers/" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-instagram"></i>
           </a>
+
+          
         </div>
-        <p>© 2024 Vernon Travel Basketball Co. All Rights Reserved.</p>
+        <p>© 2025 New England Sabers All Rights Reserved.</p>
         <p className="footer-text">Website created by Alex Deane</p>
       </footer>
     </div>

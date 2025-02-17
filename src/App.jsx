@@ -4,12 +4,11 @@ import { motion } from 'framer-motion'; // Import framer-motion for animations
 import Jumbotron from './components/Jumbotron';
 import CarouselComponent from './components/Carousel';
 import Layout from './Layout';
-import Register from './Register';
 import About from './pages/About';
 import Board from './pages/Board';
 import Pricing from './pages/Pricing';
 import Contact from './pages/Contact';
-import SignUp from './pages/SignUp';
+import Signup from './pages/SignUp';
 import AuthProvider from './context/AuthContext';
 import EventsAndFlyers from './pages/EventsAndFlyers';
 import ErrorBoundary from './components/ErrorBoundary';
@@ -66,13 +65,12 @@ function App() {
           <ErrorBoundary>
             <Routes>
               <Route path="/" element={<HomePageWithToast />} />
-              <Route path="/register" element={<Register />} />
               <Route path="/about" element={<About />} />
               <Route path="/board" element={<Board />} />
               <Route path="/events" element={<EventsAndFlyers />} />
               <Route path="/pricing" element={<Pricing />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/signup" element={<SignUp />} />
+              <Route path="/signup" element={<Signup />} />
               <Route path="/calendar" element={<CalendarPage />} />
             </Routes>
           </ErrorBoundary>
