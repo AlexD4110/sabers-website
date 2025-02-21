@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoneyBillWave, faCheck, faBasketball, faTrophy, faShirt } from '@fortawesome/free-solid-svg-icons';
 import { motion } from 'framer-motion';
+import PricingAndDiscounts from '../components/PricingAndDiscounts';
 
 const PricingPage = () => {
   return (
@@ -18,13 +19,19 @@ const PricingPage = () => {
           <Col md={8}>
             <Card className="shadow-lg border-primary">
               <Card.Body>
-                <Card.Title className="text-center text-primary mb-4">
+                <Card.Title className="text-center text-primary mb-4 display-6">
                   <FontAwesomeIcon icon={faBasketball} className="me-2" />
                   AAU Program Pricing
                 </Card.Title>
-                <Card.Text className="text-center lead">
-                  Program Fee: <strong>$1,000</strong> per player for the 2024-2025 season
-                </Card.Text>
+
+                {/* Our updated Pricing & Discounts */}
+                <PricingAndDiscounts />
+
+                {/* Fee note */}
+                <p className="text-center mt-4">
+                  Program Fee: <strong>$1,000</strong> per player for the 2024-2025 season.
+                </p>
+
                 <ListGroup variant="flush" className="mb-3">
                   <ListGroup.Item className="d-flex align-items-center">
                     <FontAwesomeIcon icon={faTrophy} className="text-success me-2" />
@@ -35,11 +42,13 @@ const PricingPage = () => {
                     Full uniform package (2 jerseys, shorts, shooting shirt)
                   </ListGroup.Item>
                   <ListGroup.Item>Professional coaching staff</ListGroup.Item>
-                  <ListGroup.Item> Practices (2x/week)</ListGroup.Item>
-                  <ListGroup.Item>AAU membership & insurance</ListGroup.Item>
-                  <ListGroup.Item>Video breakdown & performance analytics</ListGroup.Item>
+                  <ListGroup.Item>Practices (2x/week)</ListGroup.Item>
+                  <ListGroup.Item>AAU membership &amp; insurance</ListGroup.Item>
+                  <ListGroup.Item>Video breakdown &amp; performance analytics</ListGroup.Item>
                 </ListGroup>
-                <small className="text-muted">*Additional costs may include travel expenses for national tournaments</small>
+                <small className="text-muted">
+                  *Additional costs may include travel expenses for national tournaments
+                </small>
               </Card.Body>
             </Card>
           </Col>
@@ -65,7 +74,7 @@ const PricingPage = () => {
                     <strong>Tryouts:</strong> October 15-22, 2023 (Mandatory evaluation for team placement)
                   </ListGroup.Item>
                   <ListGroup.Item>
-                    <strong>Practice Schedule:</strong> 
+                    <strong>Practice Schedule:</strong>
                     <ul className="mt-2">
                       <li>Winter: Indoor practices (Tue/Thu 6-8PM)</li>
                       <li>Spring/Summer: Outdoor court availability (Mon/Wed/Fri)</li>
