@@ -11,7 +11,8 @@ const Navbar = () => {
         {/* Logo as Home button */}
         <NavLink className="navbar-brand d-flex align-items-center" to="/">
           <Image
-            src="./images/Sabers.svg" // Update the path to the SVG file
+            src="./images/use.png
+            " // Update the path to the SVG file
             alt="Vernon Travel Basketball Logo"
             style={{ width: '80px', height: '80px', marginRight: '10px' }} // Adjust the size and margin of the logo
             fluid
